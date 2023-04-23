@@ -92,15 +92,15 @@ CREATE TABLE Emprunt (
 ----------
 ## Créer un utilisateur "Bibliothécaire" avec un mot de passe :
 ```sql
-CREATE USER Bibliothécaire IDENTIFIED BY MonMotDePasse1;
+CREATE USER Bibliothecaire IDENTIFIED BY MonMotDePasse1;
 ```
 ## Créer un rôle "Bibliothécaire" :
 ```sql
-CREATE ROLE Bibliothécaire;
+CREATE ROLE Bibliothecaire;
 ```
 ## Accorder le rôle "Bibliothécaire" à l'utilisateur "Bibliothécaire" :
 ```sql
-GRANT Bibliothécaire TO Bibliothécaire;
+GRANT Bibliothecaire TO Bibliothecaire;
 ```
 ## Attribution des privilèges à l'utilisateur "Bibliothécaire" :
 ```sql
