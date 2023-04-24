@@ -11,7 +11,7 @@ y compris les informations sur les livres, les auteurs, les emprunts, les lecteu
    * ID_Auteur : clé étrangère référençant la table Auteur
 * Auteur (ID_Auteur, Nom_Auteur, Date_Naissance)
    * ID_Auteur : clé primaire de la table Auteur
-   * Lecteur (ID_Lecteur, Nom_Lecteur, Date_Naissance)
+* Lecteur (ID_Lecteur, Nom_Lecteur, Date_Naissance)
    * ID_Lecteur : clé primaire de la table Lecteur
 * Exemplaire (ID_Exemplaire, ID_Livre, Disponible)
    * ID_Exemplaire : clé primaire de la table Exemplaire
