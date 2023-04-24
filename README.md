@@ -2,7 +2,7 @@
 ### Mohamed Marzougui LGLSI2-TD2-TP4
 ## Domaine d'application : Bibliothèque
 La base de données permettra de gérer les informations d'une bibliothèque, 
-y compris les informations sur les livres, les auteurs, les emprunts, les lecteurs et les employés de la bibliothèque.
+y compris les informations sur les livres, les auteurs, les emprunts, les lecteurs de la bibliothèque.
 
 ## Le Modèle Conceptuel de Données (MCD):
 - le schéma relationnel correspondant au MCD:
