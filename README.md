@@ -23,15 +23,15 @@ y compris les informations sur les livres, les auteurs, les emprunts, les lecteu
 
 ## Le Modèle Logique de Données (MLD) :
 - Table Livre :
-    ID_Livre (clé primaire)
-    Titre
-    ID_Auteur (clé étrangère)
-    Date_Publication
+    - ID_Livre (clé primaire)
+    - Titre
+    - ID_Auteur (clé étrangère)
+    - Date_Publication
 
 - Table Auteur :
-    ID_Auteur (clé primaire)
-    Nom_Auteur
-    Date_Naissance
+    - ID_Auteur (clé primaire)
+    - Nom_Auteur
+    - Date_Naissance
 
 - Table Lecteur :
     ID_Lecteur (clé primaire)
