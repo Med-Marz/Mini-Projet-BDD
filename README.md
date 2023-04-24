@@ -188,26 +188,26 @@ SELECT * FROM Exemplaire WHERE Statut_Exemplaire = 'Disponible';
 ```
 
 ----------
+Cette requête sélectionne les colonnes Titre et Auteur de la table Livre et les trie par ordre alphabétique croissant du titre (en utilisant l'option ASC).
 ```sql
 SELECT Titre, Auteur
 FROM Livre
 ORDER BY Titre ASC;
 ```
-Cette requête sélectionne les colonnes Titre et Auteur de la table Livre et les trie par ordre alphabétique croissant du titre (en utilisant l'option ASC).
 -----------
+Cette requête va afficher l'identifiant de chaque lecteur ainsi que le nombre d'emprunts qu'il a effectués. 
+GROUP BY permet de regrouper les emprunts par lecteur, et la fonction COUNT(*) permet de compter le nombre d'emprunts pour chaque groupe. 
 ```sql
 SELECT ID_Lecteur, COUNT(*) AS Nb_Emprunts
 FROM Emprunt
 GROUP BY ID_Lecteur;
 ```
-Cette requête va afficher l'identifiant de chaque lecteur ainsi que le nombre d'emprunts qu'il a effectués. 
-GROUP BY permet de regrouper les emprunts par lecteur, et la fonction COUNT(*) permet de compter le nombre d'emprunts pour chaque groupe. 
 -----------
+Cette requête va afficher le nombre d'emprunts pour chaque lecteur ayant effectué plus de 5 emprunts. 
+La clause HAVING va filtrer les résultats de la requête GROUP BY pour ne retourner que les résultats où le nombre d'emprunts est supérieur à 5.
 ```sql
 SELECT ID_Lecteur, COUNT(*) AS Nb_Emprunts
 FROM Emprunt
 GROUP BY ID_Lecteur
 HAVING COUNT(*) > 5;
 ```
-Cette requête va afficher le nombre d'emprunts pour chaque lecteur ayant effectué plus de 5 emprunts. 
-La clause HAVING va filtrer les résultats de la requête GROUP BY pour ne retourner que les résultats où le nombre d'emprunts est supérieur à 5.
