@@ -34,21 +34,21 @@ y compris les informations sur les livres, les auteurs, les emprunts, les lecteu
     - Date_Naissance
 
 - Table Lecteur :
-    ID_Lecteur (clé primaire)
-    Nom_Lecteur
-    Date_Naissance
+    - ID_Lecteur (clé primaire)
+    - Nom_Lecteur
+    - Date_Naissance
 
 - Table Exemplaire :
-    ID_Exemplaire (clé primaire)
-    ID_Livre (clé étrangère)
-    Disponible
+    - ID_Exemplaire (clé primaire)
+    - ID_Livre (clé étrangère)
+    - Statut_Exemplaire
 
 - Table Emprunt :
-    ID_Emprunt (clé primaire)
-    ID_Lecteur (clé étrangère)
-    ID_Exemplaire (clé étrangère)
-    Date_Emprunt
-    Date_Retour
+    - ID_Emprunt (clé primaire)
+    - ID_Lecteur (clé étrangère)
+    - ID_Exemplaire (clé étrangère)
+    - Date_Emprunt
+    - Date_Retour
 ------------
 ## Requêtes de création des tables:
 
